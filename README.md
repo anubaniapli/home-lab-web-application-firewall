@@ -30,7 +30,7 @@ Go to the official VirtualBox download page: https://www.virtualbox.org/wiki/Dow
 
 * Start the VM, it should bring you straight to the login screen. The login is kali/kali by default.
 
-![](create-kali-vm.png)
+![](/img/create-kali-vm.png)
 
 ### Create the Ubuntu Server Virtual Machine
 
