@@ -58,7 +58,7 @@ Go to the official VirtualBox download page: https://www.virtualbox.org/wiki/Dow
 
 4. Repeat for second VM.
 
-![](enable-bridged-networking.png)
+![](/img/enable-bridged-networking.png)
 
 ## DVWA Installation
 
@@ -114,7 +114,7 @@ You should be in a MariaDB CLI now but not yet connected to database.
 
 `flush privileges;` Tells database to reload authentication privileges.
 
-![](maria-database-creation.png)
+![](/img/maria-database-creation.png)
 
 You can check if you properly configured things by using `mysql -u root -p` then entering the password. If done properly you should have no trouble logging in from a separate terminal. Alternatively you can do `mysql -u root -ppassword` with no spaces between the tag and the password. 
 
@@ -122,17 +122,17 @@ You can check if you properly configured things by using `mysql -u root -p` then
 
 Navigate to `localhost/DVWA/setup.php` in your browser and click `Create/Reset Database`. You should be redirected to the login page. The default credentials are admin/password.
 
-![](dvwa-setup-page.png)
+![](/img/dvwa-setup-page.png)
 
-![](dwva-database-setup-1.png)
+![](/img/dwva-database-setup-1.png)
 
-![](dvwa-database-setup-2.png)
+![](/img/dvwa-database-setup-2.png)
 
-![](dvwa-login.png)
+![](/img/dvwa-login.png)
 
 Now to give it a test to make sure it works lets try a reflected XSS attack. Navigate to XSS (Reflected) on the DVWA webpage. It will ask you for your name. Place any alphanumeric string in the box as well as `<script> alert() </script>` then click submit. The browser should trigger a popup.
 
-![](dvwa-xss.gif)
+![](/img/dvwa-xss.gif)
 
 
 ----------------------------
